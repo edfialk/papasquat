@@ -5,18 +5,18 @@
       fixed
       permanent
       width="400"
+      bottom
     >
-      <div class="blue darken-1">
-        <Search></Search>
-        <Filters></Filters>
+      <div class="d-flex flex-column h-100">
+        <div class="blue darken-1">
+          <Search></Search>
+          <Filters></Filters>
+        </div>
+        <ItemList></ItemList>
       </div>
-      <ItemList></ItemList>
     </v-navigation-drawer>
 
     <v-content>
-      <vContainer>
-        content container
-      </vContainer>
       <Map></Map>
     </v-content>
 
