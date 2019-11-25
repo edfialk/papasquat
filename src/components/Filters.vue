@@ -5,7 +5,7 @@
         <!-- <VContainer class="d-flex align-items-center"> -->
 
             <VSelect
-                :items="countItems"
+                :items="counts"
                 v-model="count"
                 class="mx-2 caption pt-0 mt-0"
                 dense
@@ -14,7 +14,7 @@
             ></VSelect>
 
             <VSelect
-                :items="orderItems"
+                :items="orders"
                 v-model="order"
                 class="mx-2 caption pt-0 mt-0"
                 dense
@@ -23,7 +23,7 @@
             ></VSelect>
 
             <VSelect
-                :items="typeItems"
+                :items="types"
                 v-model="type"
                 class="mx-2 caption pt-0 mt-0"
                 dense
@@ -47,11 +47,11 @@
 export default {
     data: () => ({
         count: 10,
-        countItems: [10, 20, 50, "All"],
+        counts: [10, 20, 50, "All"],
         order: "Closest",
-        orderItems: ["Closest", "Best"],
+        orders: ["Closest", "Best"],
         type: "Spots",
-        typeItems: ["Spots", "Parks", "Restaurants", "Bars"],
+        types: ["Spots", "Parks", "Restaurants", "Bars"],
     })
 }
 </script>
@@ -66,7 +66,6 @@ export default {
     }
     .small {
         width: 80px;
-        // text-align: center;
     }
 }
 .v-icon.v-icon.fs-18 {
